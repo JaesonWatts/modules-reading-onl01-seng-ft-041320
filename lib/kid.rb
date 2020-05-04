@@ -9,6 +9,7 @@ class Kid
   def initialize(name)
     @name = name
   end
-  extend MetaDancing
+  extend FancyDance::ClassMethods
+  include FancyDance::InstanceMethods
 end
 
